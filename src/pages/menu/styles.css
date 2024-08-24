@@ -1,0 +1,72 @@
+.menu__container {
+    background-image: url('../../assets/MenuBackground.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .75);
+    background-blend-mode: darken;
+    padding: 100px 0;
+}
+
+.menu__section {
+    margin: 20px 0;
+}
+
+.menu__title {
+    font-size: 3rem;
+    color: var(--light);
+    padding: 20px 0;
+}
+
+.menu__subtitle {
+    font-size: 2rem;
+    font-family: var(--main-title);
+    color: #ffffff90;
+    margin: 10px 0;
+}
+
+.menu__cta {
+    color: #ffffff90;
+}
+
+.menu__cta:hover {
+    color: white;
+}
+
+.menu__articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.menu__article > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms ease-out;
+}
+
+.menu__article:hover > img {
+    scale: 1.2;
+}
+
+.menu__article {
+    overflow: hidden;
+    position: relative;
+}
+
+.menu__article > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent, transparent, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 5px 10px;
+}
+
+.menu__article > div * {
+    color: white;
+}

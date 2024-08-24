@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+  /* Fonts */
+  --main-title: "Dancing Script", cursive;
+  --content: 'Nunito', Sans-serif;
+
+  /* Colors */
+  --primary: #6e7556;
+  --light: white;
+  --dark: #222222;
+  --yellow: #D3C300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--content);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.error {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: var(--content);
+  font-size: 2rem;
+  color: lightgray;
+  text-align: center;
+}
